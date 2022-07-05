@@ -1,0 +1,22 @@
+0. Cree BD en firestore, cree las colecciones 
+1. Installe y agrege en angular.json bootstrap (si lo voy a usar), creacion de componentes sin spec.ts, y firebase @angular/fire --save, 
+2. Instale npm i flash-messages-angular --save para producir ciertos mensajes
+3. Configuracion de routes en app-routing-module.ts
+4.configure en app.component.html que aparezca el cabero y footer en todas las paginas y el router-outlet
+5. Configuracion de cabecero menu, tablero, piePagina
+6. en carpeta Environments.ts y el de produccion y, agregue los datos de la BD 
+7. en appModule agregue los imports de firebase
+8. Servicio de clientes 
+-- Para solucionar error de  "Property 'clientes' has no initializer and is not definitely assigned in the constructor."poner en el tsconfig.json: "strictPropertyInitialization": false,
+9. Cliente component.html, component.ts
+10. Editar Cliente component  
+11. Modificacion en BD para autenticacion de login (permiti autenticacion con mail y password y reglas)
+12. Modificacion de login.html/ts y  Creacion de Login service 
+13. Guardianes de autenticacion para no acceder a urls sin estar logueado
+14. registro component.html,ts. Modificaciones en servicio de login
+15. configuracion component.html/ts, creacion servicio configuracion y modelo
+16. Guardian de configuracion para no acceder a /registrarse sino esta permitido (lo cambio en configuracion si dejo o no registrarse)
+17. Despliegue en produccion (seguir pasos en el hosting  de firebase) -
+18.  elimiar el dist que cree siguiendo los pasos del firebase (se pone solo dist) y despues hacer ng build --aot
+y modificar en firebase.json "public": "dist/control-clientes", no dejar solo dist, sino agregar la carpeta que tambien se creo
+19. TUVE PROBLEMAS PARA DESPEGARLA EN PRODUCCION (el ng build --aot no me genero el html)
